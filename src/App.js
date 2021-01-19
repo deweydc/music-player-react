@@ -8,12 +8,15 @@ import Song from "./Components/Songs";
 import data from './library'
 
 function App() {
+
   //State 
   const [songs, setSongs] = useState(data());
   // returns whole array of song objects 
-  const [currentSong, setCurrentSong] = useState(songs[0])
+  const [currentSong, setCurrentSong] = useState(songs[6])
   //set the initial song when page is loaded 
   const [isPlaying, setIsPlaying] = useState(false)
+  // looks if music is playing
+
 
   return (
     <div className="App">
